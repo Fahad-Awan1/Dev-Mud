@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Mud | Innovation & Engineering</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            // Replaced 'mud' (slate) with 'mud' (zinc/neutral) for a darker, sleeker black feel
+            mud: {
+              50: '#fafafa',
+              100: '#f4f4f5',
+              200: '#e4e4e7',
+              300: '#d4d4d8',
+              400: '#a1a1aa',
+              500: '#71717a',
+              600: '#52525b',
+              700: '#3f3f46',
+              800: '#27272a',
+              900: '#18181b',
+              950: '#09090b', // Deep zinc black
+            },
+            // Silver metallic accents
+            silver: {
+              100: '#ffffff',
+              200: '#e2e8f0',
+              300: '#cbd5e1',
+              400: '#94a3b8',
+              500: '#64748b',
+            },
+            // Accent is now a bright silver/white highlight instead of blue
+            accent: {
+              DEFAULT: '#d4d4d8', // Light Grey/Silver
+              hover: '#ffffff',   // White
+            },
+            black: '#000000',
+          },
+          animation: {
+            'bounce-slow': 'bounce 3s infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #000000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #3f3f46;
+      border-radius: 5px;
+      border: 2px solid #000000;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #71717a;
+    }
+
+    /* Metallic Text Effect Class */
+    .text-silver-gradient {
+      background: linear-gradient(to bottom, #ffffff 0%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-chrome-gradient {
+      background: linear-gradient(to bottom, #e4e4e7 0%, #71717a 50%, #e4e4e7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-black text-mud-100 antialiased overflow-x-hidden">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>

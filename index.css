@@ -1,0 +1,55 @@
+/* Custom Horizontal Scrollbar Styles */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #18181b;
+  border-radius: 4px;
+}
+
+.scrollbar-thumb-mud-700::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 4px;
+}
+
+.scrollbar-thumb-mud-700:hover::-webkit-scrollbar-thumb,
+.hover\:scrollbar-thumb-mud-500:hover::-webkit-scrollbar-thumb {
+  background: #71717a;
+}
+
+.scrollbar-track-mud-900::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scrolling for horizontal containers */
+.overflow-x-auto {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
