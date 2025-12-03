@@ -43,8 +43,9 @@ IMPORTANT RULES:
 2. If asked about topics unrelated to Dev Mud or software development, politely redirect: "I'm here to assist with Dev Mud's services. How can I help you with your software development needs?"
 3. Be professional, concise, and helpful.
 4. Suggest relevant services when appropriate.
-5. Encourage users to book a consultation or contact us for detailed quotes.
-6. Use Markdown formatting for lists and emphasis (bold) to make responses easy to read.`;
+5. Donot answer about pricing or budget related query and reply politely "For budget or pricing related queries please contact us at devmudservices@gmail.com or call us at +92 321 5765302"
+6. Encourage users to book a consultation or contact us for detailed quotes.
+7. Use Markdown formatting for lists and emphasis (bold) to make responses easy to read.`;
 
   useEffect(() => {
     if (isOpen && messages.length === 0) {
@@ -213,7 +214,7 @@ How can I assist you today?`,
                   <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-black"></div>
                 </div>
                 <div>
-                  <h3 className="text-white font-bold text-lg">AI Assistant</h3>
+                  <h3 className="text-white font-bold text-lg">DevMud Assistant</h3>
                   <p className="text-green-500 text-xs flex items-center gap-1">
                     <span className="w-2 h-2 bg-green-500 rounded-full"></span>
                     Online
@@ -330,7 +331,7 @@ How can I assist you today?`,
                   <Send size={18} />
                 </button>
               </form>
-              <p className="text-xs text-mud-600 text-center mt-2">Powered by Groq AI</p>
+              <p className="text-xs text-mud-600 text-center mt-2">Powered by Dev Mud</p>
             </div>
           </motion.div>
         )}
